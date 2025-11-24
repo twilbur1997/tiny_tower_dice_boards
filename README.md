@@ -2,11 +2,17 @@
 
 [Intro](#intro)  
 
+[Statistics](#statistics-(or-refresher!))  
+
 [Results](#results) 
 
 [Board Images](#board-images)
+- [Free Board Images](#free-board-images)
+- [Premium Board Images](#premium-board-images)
 
 [Board Tables](#board-tables)
+- [Free Board Tables](#free-board-tables)
+- [Premium Board Tables](#premium-board-tables)
 
 
 ---
@@ -24,14 +30,14 @@ The code is being developed and is expected to be published on or around 8:00pm 
 
 ---
 
-# Statistic Intro (or Refresher!)
+# Statistics  (or Refresher!)
 
 *See below for basics of the statistics used in the project*
 
 
 ## Expected Value Problem
 
-Let's say I offer you a game based on dice rolls. Each roll costs you $3, but there are potential rewards. 
+Let's say I offer you a game based on dice rolls. There are potential rewards based on the following options. However, you can only pick one of the options.  
 
 1. $1 per pip on the resulting dice face (i.e. rolling a 6 is worth $6)
 2. $5 if an even number is rolled 
@@ -55,27 +61,27 @@ The answer is below, but take a second to think on it yourself.
 <details>
   <summary>Answer and Explanation</summary>
   
-1. $1 per pip:
+1. **Option 1:** $1 per pip:
     - This is the same as $1 per 1, $2 per 2, […], $6 per 6 rolled
-    - Expected value: =SUM($1,$2,$3,$4,$5,$6)/6 = $21/6 = $3.50 per roll
-2. $5 per even number:
+    - Expected value: =SUM($1, $2, $3, $4, $5, $6)/6 = $21/6 = $3.50 per roll
+2. **Option 2:** $5 per even number:
     - This is the same as $0 per 1, $5 per 2, [...] $5 per 6
-    - Expected value: =SUM($0,$5,$0,$5,$0,$5)/6 = $15/6 = $2.50 per roll
-3. $20 per #6:
+    - Expected value: =SUM($0, $5, $0, $5, $0, $5)/6 = $15/6 = $2.50 per roll
+3. **Option 3:** $20 per #6:
     - This is the same as $0 per 1, $0 per 2, [...], $20 per 6
-    - Expected value: =SUM($0,$0,$0,$0,$0,$20)/6 = $20/6 = $3.33 per roll
+    - Expected value: =SUM($0, $0, $0, $0, $0, $20)/6 = $20/6 = $3.33 per roll
 
 
-So, we have found that the expected value is highest for Option #1
+So, we have found that the expected value is highest for Option 1 with an expected value of $3.50 per roll.
   
 </details>
 
 
 <br /> 
 
-The above results are easy to use math to reason through hypothetically. However, you can also simulate this using computer programming. Using many, many rolls, you can arrive at an answer that matches the above!
+The above results are easy to use math to reason through hypothetically. However, you can also simulate this using computer programming. Using many, many simulated rolls, you can arrive at an answer that matches the above!
 
-This is how we will determine how valuable each roll is for the Tiny Tower's dice minigame. By using thousands or millions of rolls, we don't have to have exact formulas, we can simply approximate the average value. 
+This is how we will determine how valuable each roll is for Tiny Tower's dice minigame. By using thousands or millions of rolls, we don't have to have exact formulas, we can simply approximate the average value. 
 
 For easier to understand numbers, the results below assume you roll the dice 100 times. This means (for example) instead of earning 0.15 chests per roll, you earn 15 chests per 100 rolls, which is easier to compare between boards.
 
@@ -83,7 +89,7 @@ For easier to understand numbers, the results below assume you roll the dice 100
 
 # Results
 
-This will be filled out by the date/time above.
+This will be filled out by the date/time above listed in the Intro Section.
 
 ---
 
@@ -95,7 +101,7 @@ Note that Coins are not standardized between screenshots, and Coin rewards are d
 
 To standardize Coins, the tables below list Coin rewards as a percentage of the cost of a new floor.
 
-## Free Boards:
+## Free Board Images
 
 
 | Board A | Board B | Board C | Thanksgiving 2025 |
@@ -104,7 +110,7 @@ To standardize Coins, the tables below list Coin rewards as a percentage of the 
 | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_free_special.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_free_special.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_free_special.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_thksgvg2025_free_special.png" width="200"> |
 
 
-## Premium Boards:
+## Premium Board Images
 
 | Board A | Board B | Board C | Thanksgiving 2025 | 
 |----------|----------|----------|----------|
@@ -127,7 +133,7 @@ Please note the following:
 3. The "???" tile is also referred to as "Mystery" in some places since the code wouldn't let me use "???" in some variable names. 
 4. There may be errors in the following table!! Let me know in the Tiny Tower Discord @ToadTruck
 
-
+## Free Board Tables
 
 
 |   | AFree | BFree | CFree | Thanksgiving2025Free |
@@ -154,7 +160,7 @@ Please note the following:
 | Mystery 4 | <sub>10% : 3 Silver Keys</sub> | <sub>10% : 10 Legendary Ticket</sub> | <sub>10% : 1 Golden Ticket</sub> | <sub>5% : 30 Legendary Tickets</sub> | 
 
 
-
+## Premium Board Tables
 
 
 |   | APremium | BPremium | CPremium | Thanksgiving2025Premium |

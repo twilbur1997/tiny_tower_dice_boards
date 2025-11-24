@@ -51,8 +51,8 @@ To standardize Coins, the tables below list Coin rewards as a percentage of the 
 
 | Board A | Board B | Board C |
 |----------|----------|----------|
-| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_free_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_free_tiles.png" width="300"> | PLACEHOLDER_FOR_BOARD_C_TILES |
-| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_free_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_free_special.png" width="300"> | PLACEHOLDER_FOR_BOARD_C_SPECIAL_REWARDS |
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_premium_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_premium_tiles.png" width="300"> | PLACEHOLDER_FOR_BOARD_C_TILES |
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_premium_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_premium_special.png" width="300"> | PLACEHOLDER_FOR_BOARD_C_SPECIAL_REWARDS |
 
 
 ---

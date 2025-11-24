@@ -24,6 +24,26 @@ The code is being developed and is expected to be published on or around 8:00pm 
 
 ---
 
+# Statistic Intro (or Refresher!)
+
+*Basics of the statistics used in the project*
+
+Expected Value
+If you get $1 per pip or $5 per even number rolled or $15 per #6 rolled , which should you take?
+Standard 6-sided die, evenly weighted means uniform distribution
+Note: a "pip" is the dot on the side of a dice.
+$1 per pip:
+$1 per 1, $2 per 2, […], $6 per 6 rolled
+Expected value: =SUM($1,$2,[…],$6)/6 = $21/6 = $3.50
+$5 per even number:
+$0 per 1, $5 per 2, [...] $5 per 6
+Expected value: =SUM($0,$5,[…],$5)/6 = $15/6 = $2.50
+$18 per #6:
+$0 per 1, $0 per 2, [...], $15 per 6
+Expected value: =SUM($0,$0,[…],$15)/6 = $18/6 = $3.00
+
+---
+
 # Results
 
 This will be filled out by the date/time above.
@@ -41,18 +61,18 @@ To standardize Coins, the tables below list Coin rewards as a percentage of the 
 ## Free Boards:
 
 
-| Board A | Board B | Board C |
-|----------|----------|----------|
-| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_free_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_free_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_free_tiles.png" width="300"> |
-| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_free_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_free_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_free_special.png" width="300"> |
+| Board A | Board B | Board C | Thanksgiving 2025 |
+|----------|----------|----------|----------|
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_free_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_free_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_free_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_thksgvg2025_free_tiles.png" width="300"> | 
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_free_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_free_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_free_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_thksgvg2025_free_special.png" width="300"> |
 
 
 ## Premium Boards:
 
-| Board A | Board B | Board C |
-|----------|----------|----------|
-| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_premium_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_premium_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_premium_tiles.png" width="300"> |
-| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_premium_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_premium_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_premium_special.png" width="300"> |
+| Board A | Board B | Board C | Thanksgiving 2025 | 
+|----------|----------|----------|----------|
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_premium_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_premium_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_premium_tiles.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_thksgvg2025_premium_tiles.png" width="300"> |
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_premium_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_premium_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_premium_special.png" width="300"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_thksgvg2025_premium_special.png" width="300"> |
 
 
 ---

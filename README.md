@@ -37,6 +37,9 @@ The code is being developed and is expected to be published on or around 8:00pm 
 
 ## Expected Value Problem
 
+<details>
+  <summary>Problem Statement</summary>
+
 Let's say I offer you a game based on dice rolls. There are potential rewards based on the following options. However, you can only pick one of the options.  
 
 1. $1 per pip on the resulting dice face (i.e. rolling a 6 is worth $6)
@@ -57,6 +60,9 @@ Which should you take?
 
 
 The answer is below, but take a second to think on it yourself.
+</details>
+
+<br /> 
 
 <details>
   <summary>Answer and Explanation</summary>
@@ -76,14 +82,16 @@ So, we have found that the expected value is highest for Option 1 with an expect
   
 </details>
 
-
 <br /> 
 
+<details>
+  <summary>Summary</summary>
 The above results are easy to use math to reason through hypothetically. However, you can also simulate this using computer programming. Using many, many simulated rolls, you can arrive at an answer that matches the above!
 
 This is how we will determine how valuable each roll is for Tiny Tower's dice minigame. By using thousands or millions of rolls, we don't have to have exact formulas, we can simply approximate the average value. 
 
 For easier to understand numbers, the results below assume you roll the dice 100 times. This means (for example) instead of earning 0.15 chests per roll, you earn 15 chests per 100 rolls, which is easier to compare between boards.
+</details>
 
 ---
 

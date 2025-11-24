@@ -44,7 +44,7 @@ Which should you take?
 *Some assumptions:*
 1. *You are rolling using a standard 6-sided dice*
 2. *The dice is evenly weighted (uniform distribution)*
-3. *Each face has pips numbering 1,2,3,4,5, and 6*
+3. *Each face has pips numbering 1, 2, 3, 4, 5, and 6*
 
 
 **Note*: a "pip" is the word for a single dot on the side of a dice.

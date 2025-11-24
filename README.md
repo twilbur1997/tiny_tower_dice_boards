@@ -38,19 +38,21 @@ Note that Coins are not standardized between screenshots, and Coin rewards are d
 
 To standardize Coins, the tables below list Coin rewards as a percentage of the cost of a new floor.
 
-Free Boards:
+## Free Boards:
 
 
-| Board A | Header 2 |
-|----------|----------|
-| <img src="https://github.com/twilbur1997/markov_chain/blob/main/pictures/free_board_a_tiles.png" width="200"> | Row 1 Col 2 |
-| <img src="https://github.com/twilbur1997/markov_chain/blob/main/pictures/free_board_a_special.png" width="200"> | Row 2 Col 2 |
+| Board A | Board B | Board C |
+|----------|----------|----------|
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures/board_a_free_tiles.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures/board_b_free_tiles.png" width="200"> | PLACEHOLDER_FOR_BOARD_C_TILES |
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures/board_a_free_special.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures/board_b_free_special.png" width="200"> | PLACEHOLDER_FOR_BOARD_C_SPECIAL_REWARDS |
 
 
+## Premium Boards:
 
-
-
-Premium Boards:
+| Board A | Board B | Board C |
+|----------|----------|----------|
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures/board_a_free_tiles.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures/board_b_free_tiles.png" width="200"> | PLACEHOLDER_FOR_BOARD_C_TILES |
+| <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures/board_a_free_special.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures/board_b_free_special.png" width="200"> | PLACEHOLDER_FOR_BOARD_C_SPECIAL_REWARDS |
 
 
 ---

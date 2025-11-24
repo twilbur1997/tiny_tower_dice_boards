@@ -26,21 +26,58 @@ The code is being developed and is expected to be published on or around 8:00pm 
 
 # Statistic Intro (or Refresher!)
 
-*Basics of the statistics used in the project*
+*See below for basics of the statistics used in the project*
 
-Expected Value
-If you get $1 per pip or $5 per even number rolled or $15 per #6 rolled , which should you take?
-Standard 6-sided die, evenly weighted means uniform distribution
-Note: a "pip" is the dot on the side of a dice.
-$1 per pip:
-$1 per 1, $2 per 2, […], $6 per 6 rolled
-Expected value: =SUM($1,$2,[…],$6)/6 = $21/6 = $3.50
-$5 per even number:
-$0 per 1, $5 per 2, [...] $5 per 6
-Expected value: =SUM($0,$5,[…],$5)/6 = $15/6 = $2.50
-$18 per #6:
-$0 per 1, $0 per 2, [...], $15 per 6
-Expected value: =SUM($0,$0,[…],$15)/6 = $18/6 = $3.00
+
+## Expected Value Problem
+
+Let's say I offer you a game based on dice rolls. Each roll costs you $3, but there are potential rewards. 
+
+1. $1 per pip on the resulting dice face (i.e. rolling a 6 is worth $6)
+2. $5 if an even number is rolled 
+3. $20 per #6 rolled
+
+
+Which should you take?
+
+
+*Some assumptions:*
+1. *You are rolling using a standard 6-sided dice*
+2. *The dice is evenly weighted (uniform distribution)*
+3. *Each face has pips numbering 1,2,3,4,5, and 6*
+
+
+**Note*: a "pip" is the word for a single dot on the side of a dice.
+
+
+The answer is below, but take a second to think on it yourself.
+
+<details>
+  <summary>Answer and Explanation</summary>
+  
+1. $1 per pip:
+    - This is the same as $1 per 1, $2 per 2, […], $6 per 6 rolled
+    - Expected value: =SUM($1,$2,$3,$4,$5,$6)/6 = $21/6 = $3.50 per roll
+2. $5 per even number:
+    - This is the same as $0 per 1, $5 per 2, [...] $5 per 6
+    - Expected value: =SUM($0,$5,$0,$5,$0,$5)/6 = $15/6 = $2.50 per roll
+3. $20 per #6:
+    - This is the same as $0 per 1, $0 per 2, [...], $20 per 6
+    - Expected value: =SUM($0,$0,$0,$0,$0,$20)/6 = $20/6 = $3.33 per roll
+
+
+So, we have found that the expected value is highest for Option #1
+  
+</details>
+
+
+<br /> 
+
+The above results are easy to use math to reason through hypothetically. However, you can also simulate this using computer programming. Using many, many rolls, you can arrive at an answer that matches the above!
+
+This is how we will determine how valuable each roll is for the Tiny Tower's dice minigame. By using thousands or millions of rolls, we don't have to have exact formulas, we can simply approximate the average value. 
+
+For easier to understand numbers, the results below assume you roll the dice 100 times. This means (for example) instead of earning 0.15 chests per roll, you earn 15 chests per 100 rolls, which is easier to compare between boards.
 
 ---
 

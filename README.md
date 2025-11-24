@@ -19,7 +19,7 @@ This is the start of this project. This project will simulate 100 dice rolls acr
 
 For now there are just images and tables for the dice boards.
 
-The code is being developed and is expected to be published on or around 8:00pm Pacific time on Monday, November 24, 2025.
+The code is being developed and is expected to be published on or around 8:00pm USA Pacific time on Tuesday, November 25, 2025.
 
 
 ---

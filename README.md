@@ -141,6 +141,7 @@ Please note the following:
 3. The "???" tile is also referred to as "Mystery" in some places since the code wouldn't let me use "???" in some variable names. 
 4. There may be errors in the following table!! Let me know in the Tiny Tower Discord @ToadTruck
 
+
 ## Free Board Tables
 
 
@@ -161,11 +162,14 @@ Please note the following:
 | Tile 13 | FORWARD | FORWARD | 3 Bronze Keys | 500 Bux | 
 | Tile 14 | 12 % Coins | 12 % Coins | 1 Ad Chest | 1 ??? | 
 | Tile 15 | 300 Bux | 500 Bux | 300 Bux | 10 % Coins | 
-| Tile 16 | 10 % Coins | 10 Legendary Ticket? | 20 % Coins? | 5 Bronze Keys? | 
+| Tile 16 | 10 % Coins | 10 % Coins | 20 % Coins | 5 Bronze Keys | 
 | Mystery 1 | <sub>40% : 1 Tier 1 Chest</sub> | <sub>40% : 1 Tier 1 Chest</sub> | <sub>50% : 1500 Bux</sub> | <sub>50% : 40 Pies (40 Bux)</sub> | 
-| Mystery 2 | <sub>30% : 1 Bronze Keys</sub> | <sub>30% : 3 Golden Dice</sub> | <sub>25% : 1 Tier 3 Chest</sub> | <sub>30% : 1 Tier 2 Chest</sub> | 
+| Mystery 2 | <sub>30% : 4 Bronze Keys</sub> | <sub>30% : 3 Golden Dice</sub> | <sub>25% : 1 Tier 3 Chest</sub> | <sub>30% : 1 Tier 2 Chest</sub> | 
 | Mystery 3 | <sub>20% : 1 Golden Ticket</sub> | <sub>20% : 1 Golden Ticket</sub> | <sub>15% : 5 Gold Keys</sub> | <sub>15% : 5 Golden Dice</sub> | 
-| Mystery 4 | <sub>10% : 3 Silver Keys</sub> | <sub>10% : 10 Legendary Ticket</sub> | <sub>10% : 1 Golden Ticket</sub> | <sub>5% : 30 Legendary Tickets</sub> | 
+| Mystery 4 | <sub>10% : 3 Silver Keys</sub> | <sub>10% : 10 Legendary Tickets</sub> | <sub>10% : 1 Golden Ticket</sub> | <sub>5% : 30 Legendary Tickets</sub> | 
+
+
+
 
 
 ## Premium Board Tables
@@ -174,24 +178,22 @@ Please note the following:
 |   | APremium | BPremium | CPremium | Thanksgiving2025Premium |
 | ------- | ------- | ------- | ------- | ------- |
 | Tile 1 | 90 % Coins | 33 % Coins | FORWARD | 25 Bronze Keys | 
-| Tile 2 | 1 Tier 2 Chest | 1 Tier 1 Chest | 10 Legendary Ticket | 3 Legendary Tickets | 
+| Tile 2 | 1 Tier 2 Chest | 1 Tier 1 Chest | 10 Legendary Tickets | 3 Legendary Tickets | 
 | Tile 3 | 1 Legendary Ticket | 1 Legendary Ticket | 5 Silver Key | 67 % Coins | 
 | Tile 4 | 300 Bux | 500 Bux | 1 ??? | REVERSE | 
 | Tile 5 | REVERSE | REVERSE | 750 Bux | 10 Silver Keys | 
 | Tile 6 | 5 Bronze Keys | 1 Tier 1 Chest | 3 Silver Keys | 1 Gold Key | 
 | Tile 7 | 300 Bux | 100 Bux | 58 % Coins | 1 Tier 2 Chest | 
-| Tile 8 | 1 Legendary Ticket | 10 Legendary Ticket | 5 Legendary Ticket | FORWARD | 
+| Tile 8 | 1 Legendary Ticket | 10 Legendary Tickets | 5 Legendary Tickets | FORWARD | 
 | Tile 9 | 5 Bronze Keys | 1 Silver Key | 15 Bronze Keys | 25 Bronze Keys | 
 | Tile 10 | 90 % Coins | 133 % Coins | 500 Bux | 10 Legendary Tickets | 
 | Tile 11 | 1 Tier 2 Chest | 15 Silver Keys | 5 Silver Keys | 1 Tier 2 Chest | 
-| Tile 12 | 1 ??? | 1 ??? | 3 Legendary Ticket | 1 ??? | 
+| Tile 12 | 1 ??? | 1 ??? | 3 Legendary Tickets | 1 ??? | 
 | Tile 13 | FORWARD | FORWARD | 44 % Coins | 5 Legendary Tickets | 
 | Tile 14 | 3 Silver Keys | 1 Silver Key | REVERSE | 67 % Coins | 
 | Tile 15 | 90 % Coins | 33 % Coins | 5 Silver Keys | 15 Silver Keys | 
-| Tile 16 | 10 Legendary Tickets | 10 Legendary Ticket? | 1 Tier 2 Chest | 500 Bux | 
+| Tile 16 | 10 Legendary Tickets | 15 Bronze Keys | 1 Tier 2 Chest | 500 Bux | 
 | Mystery 1 | <sub>50% : 1 Tier 3 Chest</sub> | <sub>50% : Tier 3 Chest</sub> | <sub>55% : 30 Silver Keys</sub> | <sub>40% : 100 Pies (100 Bux)</sub> | 
 | Mystery 2 | <sub>30% : 3 Golden Tickets</sub> | <sub>30% : 5 Golden Dice</sub> | <sub>25% : 3 Golden Tickets</sub> | <sub>30% : 25 Legendary Tickets</sub> | 
 | Mystery 3 | <sub>15% : 1 Tier 4 Chest</sub> | <sub>15% : 100 Bronze Keys</sub> | <sub>15% : 1 Tier 4 Chest</sub> | <sub>20% : 1 Tier 4 Chest</sub> | 
 | Mystery 4 | <sub>5% : 100 Legendary Tickets</sub> | <sub>5% : 110 Silver Keys</sub> | <sub>5% : 100 Legendary Tickets</sub> | <sub>10% : 5 Golden Tickets</sub> | 
-
-

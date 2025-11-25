@@ -201,44 +201,57 @@ Please note the following:
 
 ## Full Tables
 
+
+
+
 ### Free Table
+
 
 | Resource | BoardAFree | BoardBFree | BoardCFree | BoardThanksgiving2025Free | 
 | ------- | ------- | ------- | ------- | ------- |
-| Coins | 425.765 | 424.496 | 389.197 | 389.645 | 
-| Bux | 9549.8 | 7319.725 | 12727.2 | 5971.402 | 
-| Ad Chest | 6.666 | 6.699 | 8.377 | 8.83 | 
-| Tier 1 Chest | 8.037 | 14.455 | 15.284 | 14.812 | 
-| Tier 2 Chest | 0 | 0 | 0 | 1.525 | 
-| Tier 3 Chest | 0 | 0 | 1.415 | 0 | 
+| Coins | 425.3 | 424.0 | 388.8 | 389.8 | 
+| Bux | 9544.9 | 7342.2 | 12644.0 | 5976.6 | 
+| Ad Chest | 6.7 | 6.7 | 8.4 | 8.8 | 
+| Tier 1 Chest | 8.1 | 14.5 | 15.4 | 14.8 | 
+| Tier 2 Chest | 0 | 0 | 0 | 1.5 | 
+| Tier 3 Chest | 0 | 0 | 1.4 | 0 | 
 | Tier 4 Chest | 0 | 0 | 0 | 0 | 
-| Bronze Key | 16.112 | 8.403 | 24.209 | 85.942 | 
-| Silver Key | 1.908 | 0 | 6.809 | 11.474 | 
-| Gold Key | 0 | 0 | 4.355 | 0 | 
-| Golden Dice | 0 | 12.727 | 6.385 | 9.895 | 
-| Golden Ticket | 1.276 | 1.297 | 0.588 | 0 | 
-| Legendary Ticket | 0 | 6.427 | 0 | 8.254 | 
+| Bronze Key | 16.1 | 8.4 | 24.1 | 85.9 | 
+| Silver Key | 1.9 | 0 | 6.8 | 11.5 | 
+| Gold Key | 0 | 0 | 4.4 | 0 | 
+| Golden Dice | 0 | 12.6 | 6.4 | 9.9 | 
+| Golden Ticket | 1.3 | 1.3 | 0.6 | 0 | 
+| Legendary Ticket | 0 | 6.5 | 0 | 8.2 | 
 | ??? | 0 | 0 | 0 | 0 | 
+
 
 
 ### Premium Table
 
+
 | Resource | BoardAPremium | BoardBPremium | BoardCPremium | BoardThanksgiving2025Premium | 
 | ------- | ------- | ------- | ------- | ------- |
-| Coins | 1895.112 | 1299.219 | 782.502 | 1143.811 | 
-| Bux | 4796.64 | 5281.88 | 8946.8 | 4130.16 | 
+| Coins | 1892.3 | 1292.4 | 783.5 | 1141.2 | 
+| Bux | 4817.5 | 5298.3 | 8952.1 | 4154.3 | 
 | Ad Chest | 0 | 0 | 0 | 0 | 
-| Tier 1 Chest | 0 | 15.254 | 0 | 0 | 
-| Tier 2 Chest | 13.849 | 0 | 6.893 | 13.192 | 
-| Tier 3 Chest | 3.221 | 3.185 | 0 | 0 | 
-| Tier 4 Chest | 0.958 | 0 | 0.665 | 1.058 | 
-| Bronze Key | 67.069 | 208.505 | 113.249 | 359.252 | 
-| Silver Key | 18.649 | 130.984 | 200.406 | 183.637 | 
-| Gold Key | 0 | 0 | 0 | 6.883 | 
-| Golden Dice | 0 | 9.579 | 0 | 0 | 
-| Golden Ticket | 5.749 | 0 | 3.29 | 2.665 | 
-| Legendary Ticket | 123.003 | 75.363 | 150.44 | 154.09 | 
+| Tier 1 Chest | 0 | 15.4 | 0 | 0 | 
+| Tier 2 Chest | 13.9 | 0 | 6.9 | 13.2 | 
+| Tier 3 Chest | 3.2 | 3.2 | 0 | 0 | 
+| Tier 4 Chest | 0.9 | 0 | 0.7 | 1.1 | 
+| Bronze Key | 67.1 | 207.5 | 112.8 | 361.0 | 
+| Silver Key | 18.8 | 129.9 | 200.7 | 181.5 | 
+| Gold Key | 0 | 0 | 0 | 6.9 | 
+| Golden Dice | 0 | 9.7 | 0 | 0 | 
+| Golden Ticket | 5.8 | 0 | 3.3 | 2.7 | 
+| Legendary Ticket | 121.9 | 75.5 | 150.6 | 154.3 | 
 | ??? | 0 | 0 | 0 | 0 | 
+
+
+
+
+
+
+
 
 
 

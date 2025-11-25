@@ -4,7 +4,6 @@
 
 [Statistics](#statistics-(or-refresher!))  
 
-[Results](#results) 
 
 [Board Images](#board-images)
 - [Free Board Images](#free-board-images)
@@ -13,6 +12,10 @@
 [Board Tables](#board-tables)
 - [Free Board Tables](#free-board-tables)
 - [Premium Board Tables](#premium-board-tables)
+
+[Results](#results) 
+- [Full Table](#full-table)
+- [Interpretations](#interpretations)
 
 
 ---
@@ -92,12 +95,6 @@ This is how we will determine how valuable each roll is for Tiny Tower's dice mi
 
 For easier to understand numbers, the results below assume you roll the dice 100 times. This means (for example) instead of earning 0.15 chests per roll, you earn 15 chests per 100 rolls, which is easier to compare between boards.
 </details>
-
----
-
-# Results
-
-This will be filled out by the date/time above listed in the Intro Section.
 
 ---
 
@@ -197,10 +194,6 @@ Please note the following:
 | Mystery 2 | <sub>30% : 3 Golden Tickets</sub> | <sub>30% : 5 Golden Dice</sub> | <sub>25% : 3 Golden Tickets</sub> | <sub>30% : 25 Legendary Tickets</sub> | 
 | Mystery 3 | <sub>15% : 1 Tier 4 Chest</sub> | <sub>15% : 100 Bronze Keys</sub> | <sub>15% : 1 Tier 4 Chest</sub> | <sub>20% : 1 Tier 4 Chest</sub> | 
 | Mystery 4 | <sub>5% : 100 Legendary Tickets</sub> | <sub>5% : 110 Silver Keys</sub> | <sub>5% : 100 Legendary Tickets</sub> | <sub>10% : 5 Golden Tickets</sub> | 
-
-
-
-
 
 
 # Results

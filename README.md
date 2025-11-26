@@ -1,11 +1,8 @@
-### Table of Contents  
+## Table of Contents  
 
 [Intro](#intro)  
 
 [Disclaimer](#disclaimer)
-
-[Statistics](#statistics-(or-refresher!))  
-
 
 [Board Images](#board-images)
 - [Free Board Images](#free-board-images)
@@ -31,11 +28,29 @@
 
 ---
 
-
+<br>
 
 # Intro
 
 Hi there! Thank you for being interested in this project! 
+
+The following write-up contains the following:
+1. Screenshots of in-game dice boards
+2. Tables describing the resources on those boards
+3. The results of millions of artificial dice rolls predicting how many resources are expected per 100 rolls
+4. A discussion on the best boards depending on your desired resource and strategy when playing the game
+
+Whether you are a long-standing player of the game, or someone who is just starting out, I hope this data is helpful!
+
+Note that if you are a starting player, I'd recommend reviewing the Tiny Tower Wiki ([here](https://tinytower.fandom.com/wiki/Tiny_Tower_Wiki)) and joining the Tiny Tower community Discord ([here](https://discord.com/invite/BmaZ2aY))!
+
+There's also a Reddit community ([here](https://www.reddit.com/r/tinytower/)). 
+
+<br>
+
+Happy building, 
+
+-- Toad
 
 ## Disclaimer
 
@@ -44,13 +59,17 @@ This page is meant to educate the Tiny Tower community on expected values. Howev
 
 ---
 
+<br>
+
 # Board Images
 
 The following boards are organized (A, B, C, Event (if applicable))
 
-Note that Coins are not standardized between screenshots, and Coin rewards are directly related to how many floors are in the current tower.
+****Note that Coins are not standardized between screenshots.***
 
 To standardize Coins, the tables below list Coin rewards as a percentage of the cost of a new floor.
+
+<br>
 
 ## Free Board Images
 
@@ -71,6 +90,7 @@ To standardize Coins, the tables below list Coin rewards as a percentage of the 
 
 ---
 
+<br>
 
 # Board Tables
 

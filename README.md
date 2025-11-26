@@ -22,7 +22,7 @@
     * [Premium Board Discussion](#premium-board-discussion)
 
 
-[Finale](#finale:-best-board-per-resource?)
+[Finale](#finale)
 - [Free Board Finale](#free-board-finale)
 - [Premium Board Finale](#premium-board-finale)
 
@@ -223,7 +223,8 @@ Bronze Keys, Silver Keys, and Legendary Tickets were more common than I was expe
 
 
 
-# Finale: Best Board per resource?
+# Finale
+## Best Board per resource?
 
 With all of that discussion - which board is best? Or at least, which board is best for which resource?
 

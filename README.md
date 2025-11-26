@@ -52,6 +52,9 @@ Happy building,
 
 -- Toad
 
+<br>
+<br>
+
 ## Disclaimer
 
 This page is meant to educate the Tiny Tower community on expected values. However you wish to play the game to have fun is up to you. You don't have to optimize the fun out of it!
@@ -60,6 +63,8 @@ This page is meant to educate the Tiny Tower community on expected values. Howev
 ---
 
 <br>
+<br>
+
 
 # Board Images
 
@@ -79,6 +84,9 @@ To standardize Coins, the tables below list Coin rewards as a percentage of the 
 | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_free_tiles.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_free_tiles.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_free_tiles.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_thksgvg2025_free_tiles.png" width="200"> | 
 | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_a_free_special.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_b_free_special.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_c_free_special.png" width="200"> | <img src="https://github.com/twilbur1997/tiny_tower_dice_boards/blob/main/pictures_dice_boards/board_thksgvg2025_free_special.png" width="200"> |
 
+<br>
+<br>
+
 
 ## Premium Board Images
 
@@ -91,6 +99,8 @@ To standardize Coins, the tables below list Coin rewards as a percentage of the 
 ---
 
 <br>
+<br>
+
 
 # Board Tables
 
@@ -103,6 +113,9 @@ Please note the following:
     - If a new floor in your tower costs 10,000 coins, a "10% Coins" will give 1,000 coins
 3. The "???" tile is also referred to as "Mystery" in some places since the code wouldn't let me use "???" in some variable names. 
 4. There may be errors in the following table!! Let me know in the Tiny Tower Discord @ToadTruck
+
+<br>
+<br>
 
 
 ## Free Board Tables
@@ -132,6 +145,8 @@ Please note the following:
 | Mystery 4 | <sub>10% : 3 Silver Keys</sub> | <sub>10% : 10 Legendary Tickets</sub> | <sub>10% : 1 Golden Ticket</sub> | <sub>5% : 30 Legendary Tickets</sub> | 
 
 
+<br>
+<br>
 
 
 
@@ -161,6 +176,9 @@ Please note the following:
 | Mystery 3 | <sub>15% : 1 Tier 4 Chest</sub> | <sub>15% : 100 Bronze Keys</sub> | <sub>15% : 1 Tier 4 Chest</sub> | <sub>20% : 1 Tier 4 Chest</sub> | 
 | Mystery 4 | <sub>5% : 100 Legendary Tickets</sub> | <sub>5% : 110 Silver Keys</sub> | <sub>5% : 100 Legendary Tickets</sub> | <sub>10% : 5 Golden Tickets</sub> | 
 
+<br>
+<br>
+
 
 # Results
 
@@ -170,6 +188,9 @@ Please note the following:
 These results reflect 1,000 trials of rolling a dice 1,000 times on each board. Then, the results are normalized to be an expected 100 rolls.
 
 I may publish some more precise tables, or some less precise tables with prettier/rounder numbers in the future.
+
+<br>
+
 
 ### Free Table
 
@@ -192,6 +213,7 @@ I may publish some more precise tables, or some less precise tables with prettie
 | ??? | 0 | 0 | 0 | 0 | 
 
 
+<br>
 
 
 ### Premium Table
@@ -214,12 +236,15 @@ I may publish some more precise tables, or some less precise tables with prettie
 | Legendary Ticket | 121.28 | 75.84 | 150.37 | 154.34 | 
 | ??? | 0 | 0 | 0 | 0 | 
 
+<br>
+<br>
 
 
 ## Notes
 
 The ??? values are set to zero in the code right now to keep track that they've "been counted". This can be changed if desired, but I believe most boards will have similar values for this tile anyway.
 
+<br>
 
 
 ## Discussion
@@ -227,6 +252,8 @@ The ??? values are set to zero in the code right now to keep track that they've 
 Overall, Gold Keys are very rare, Golden Tickets are very rare, and Tier 4 Chests are very rare. Golden Dice are also rarer than I expected.
 
 The Premium Board A seems to be the worst Premium board, only leading for Golden Tickets, Tier 2 Chest, and Coins. 
+
+<br>
 
 ### Free Board Discussion
 
@@ -243,9 +270,12 @@ The Premium Board A seems to be the worst Premium board, only leading for Golden
 
 Bronze Keys, Silver Keys, and Legendary Tickets were more common than I was expecting.
 
+<br>
+<br>
 
 
 # Finale
+
 ## Best Board per resource?
 
 With all of that discussion - which board is best? Or at least, which board is best for which resource?
@@ -292,6 +322,8 @@ Again, for this table, the Event board is NOT considered!! You can review the ta
 | Golden Ticket | A | 5.7 | B | 0 | 
 | Legendary Ticket | C | 150 | B | 75 |
 
+<br>
+<br>
 
 # Encore
 
@@ -316,3 +348,5 @@ This is a work in progress, so any feedback is incredibly appreciated!!
     - Final Verdict:
         * Free A or B for Golden Dice
         * Premium C for Silver Keys and Legendary Tickets
+
+

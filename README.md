@@ -27,6 +27,8 @@
 - [Premium Board Finale](#premium-board-finale)
 
 
+[Encore](#encore)
+
 ---
 
 
@@ -204,16 +206,16 @@ The ??? values are set to zero in the code right now to keep track that they've 
 
 Overall, Gold Keys are very rare, Golden Tickets are very rare, and Tier 4 Chests are very rare. Golden Dice are also rarer than I expected.
 
-Board A Premium seems to be the worst Premium board, only leading for Golden Tickets, Tier 2 Chest, and Coins. 
+The Premium Board A seems to be the worst Premium board, only leading for Golden Tickets, Tier 2 Chest, and Coins. 
 
 ### Free Board Discussion
 
 1. Coins are pretty even across the boards, with about 400% (or 4 new floors) being earned every 100 rolls
 2. There are certain resources which are rare on the free board:
     - Tier 2 Chest (only on event board as of this writing)
-    - Tier 3 Chest (only on Board C free)
+    - Tier 3 Chest (only on the Free Board C)
     - Tier 4 Chest (not able to be earned)
-    - Gold Key (only on Board C free)
+    - Gold Key (only on the Free Board C)
     - Golden Ticket and Legendary Ticket
 
 
@@ -269,3 +271,28 @@ Again, for this table, the Event board is NOT considered!! You can review the ta
 | Golden Dice | B | 9.5 | A or C | 0 | 
 | Golden Ticket | A | 5.7 | B | 0 | 
 | Legendary Ticket | C | 150 | B | 75 |
+
+
+# Encore
+
+Ok, one more discussion. I've considered some potential users and what they want from a board, and which boards they should roll with.
+
+This is a work in progress, so any feedback is incredibly appreciated!!
+
+1. Coin Collector
+    - Looking to accelerate rebuilds or just build the biggest tower using Coins
+    - Board A is your best bet - both for regular dice rolls and premium dice rolls
+2. Bux Bounty Hunter
+    - Aims to acquire as much of that green stuff as possible, either for a leg up when skipping timers or to build a nest egg to spend on the next seasonal event
+    - Board C is the board for you. 
+        * On the Free Board C, you'll find about 20%-25% more Bux than on A (and 70% more than B). 
+        * On the Premium Board C, you'll get almost twice the Bux, and plenty of Silver Keys and Legendary Tickets to boot. 
+        * Though, you won't see as many Chests or Coins
+3. Legendary Bits Enthusiast
+    - Wants to unlock all of the Legendary Bits
+    - This one's a bit tough... the Free Board C offers some immediate payoff with higher rates of Ad Chests, Tier 1 Chests, and Tier 3 Chests. Plus, higher rates of Bronze, Silver, and Gold Keys. 
+    - But, the Free Board C has less than half the rate of Golden Dice as A or B, making it difficult to earn rolls on the Premium Boards.
+    - That said, the Premium Board C has a nice amount of Silver Keys and Legendary Tickets, so once you've earned those Golden 
+    - Final Verdict:
+        * Free A or B for Golden Dice
+        * Premium C for Silver Keys and Legendary Tickets

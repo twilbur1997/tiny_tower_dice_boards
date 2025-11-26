@@ -2,6 +2,8 @@
 
 [Intro](#intro)  
 
+[Disclaimer](#disclaimer)
+
 [Statistics](#statistics-(or-refresher!))  
 
 
@@ -14,8 +16,15 @@
 - [Premium Board Tables](#premium-board-tables)
 
 [Results](#results) 
-- [Full Table](#full-table)
-- [Interpretations](#interpretations)
+- [Full Tables](#full-tables)
+- [Discussion](#discussion)
+    * [Free Board Discussion](#free-board-discussion)
+    * [Premium Board Discussion](#premium-board-discussion)
+
+
+[Finale](#finale:-best-board-per-resource?)
+- [Free Board Finale](#free-board-finale)
+- [Premium Board Finale](#premium-board-finale)
 
 
 ---
@@ -24,77 +33,12 @@
 
 # Intro
 
-This is the start of this project. This project will simulate 100 dice rolls across 10,000 trials for the Tiny Tower Dice Boards and publish the results.
+Hi there! Thank you for being interested in this project! 
 
-For now there are just images and tables for the dice boards.
+## Disclaimer
 
-The code is being developed and is expected to be published on or around 8:00pm USA Pacific time on Tuesday, November 25, 2025.
+This page is meant to educate the Tiny Tower community on expected values. However you wish to play the game to have fun is up to you. You don't have to optimize the fun out of it!
 
-
----
-
-# Statistics  (or Refresher!)
-
-*See below for basics of the statistics used in the project*
-
-
-## Expected Value Problem
-
-<details>
-  <summary>Problem Statement</summary>
-
-Let's say I offer you a game based on dice rolls. There are potential rewards based on the following options. However, you can only pick one of the options.  
-
-1. $1 per pip on the resulting dice face (i.e. rolling a 6 is worth $6)
-2. $5 if an even number is rolled 
-3. $20 per #6 rolled
-
-
-Which should you take?
-
-
-*Some assumptions:*
-1. *You are rolling using a standard 6-sided dice*
-2. *The dice is evenly weighted (uniform distribution)*
-3. *Each face has pips numbering 1, 2, 3, 4, 5, and 6*
-
-
-**Note*: a "pip" is the word for a single dot on the side of a dice.
-
-
-The answer is below, but take a second to think on it yourself.
-</details>
-
-<br /> 
-
-<details>
-  <summary>Answer and Explanation</summary>
-  
-1. **Option 1:** $1 per pip:
-    - This is the same as $1 per 1, $2 per 2, […], $6 per 6 rolled
-    - Expected value: =SUM($1, $2, $3, $4, $5, $6)/6 = $21/6 = $3.50 per roll
-2. **Option 2:** $5 per even number:
-    - This is the same as $0 per 1, $5 per 2, [...] $5 per 6
-    - Expected value: =SUM($0, $5, $0, $5, $0, $5)/6 = $15/6 = $2.50 per roll
-3. **Option 3:** $20 per #6:
-    - This is the same as $0 per 1, $0 per 2, [...], $20 per 6
-    - Expected value: =SUM($0, $0, $0, $0, $0, $20)/6 = $20/6 = $3.33 per roll
-
-
-So, we have found that the expected value is highest for Option 1 with an expected value of $3.50 per roll.
-  
-</details>
-
-<br /> 
-
-<details>
-  <summary>Summary</summary>
-The above results are easy to use math to reason through hypothetically. However, you can also simulate this using computer programming. Using many, many simulated rolls, you can arrive at an answer that matches the above!
-
-This is how we will determine how valuable each roll is for Tiny Tower's dice minigame. By using thousands or millions of rolls, we don't have to have exact formulas, we can simply approximate the average value. 
-
-For easier to understand numbers, the results below assume you roll the dice 100 times. This means (for example) instead of earning 0.15 chests per roll, you earn 15 chests per 100 rolls, which is easier to compare between boards.
-</details>
 
 ---
 
@@ -201,7 +145,9 @@ Please note the following:
 
 ## Full Tables
 
+These results reflect 1,000 trials of rolling a dice 1,000 times on each board. Then, the results are normalized to be an expected 100 rolls.
 
+I may publish some more precise tables, or some less precise tables with prettier/rounder numbers in the future.
 
 ### Free Table
 
@@ -248,11 +194,77 @@ Please note the following:
 
 
 
+## Notes
+
+The ??? values are set to zero in the code right now to keep track that they've "been counted". This can be changed if desired, but I believe most boards will have similar values for this tile anyway.
 
 
 
+## Discussion
+
+Overall, Gold Keys are very rare, Golden Tickets are very rare, and Tier 4 Chests are very rare. Golden Dice are also rarer than I expected.
+
+Board A Premium seems to be the worst Premium board, only leading for Golden Tickets, Tier 2 Chest, and Coins. 
+
+### Free Board Discussion
+
+1. Coins are pretty even across the boards, with about 400% (or 4 new floors) being earned every 100 rolls
+2. There are certain resources which are rare on the free board:
+    - Tier 2 Chest (only on event board as of this writing)
+    - Tier 3 Chest (only on Board C free)
+    - Tier 4 Chest (not able to be earned)
+    - Gold Key (only on Board C free)
+    - Golden Ticket and Legendary Ticket
+
+
+### Premium Board Discussion
+
+Bronze Keys, Silver Keys, and Legendary Tickets were more common than I was expecting.
 
 
 
+# Finale: Best Board per resource?
 
-## Interpretations
+With all of that discussion - which board is best? Or at least, which board is best for which resource?
+
+## Free Board Finale
+
+For this table, the Event board is NOT considered!! You can review the tables above to check whether the event board is better for particular rewards (for Thanksgiving 2025 Free Board, it's very good for Bronze Keys and Silver Keys as well as Legendary Tickets).
+
+| Resource | Best Boards(s) | Avg per 100 rolls | Worst Board(s) | Avg per 100 rolls | 
+| ------- | ------- | ------- | ------- | ------- |
+| Coins | A or B | 424 | C | 390 | 
+| Bux | C | 12,600 | B  | 7,300 | 
+| Ad Chest | C | 8.4 |  A or B | 6.7 | 
+| Tier 1 Chest | B or C | 14.5 or 15.3 | A | 8.0 | 
+| Tier 2 Chest | N/A | 0 | A/B/C | 0 | 
+| Tier 3 Chest | C | 1.42 | A or B  | 0 | 
+| Tier 4 Chest | N/A | 0 | N/A  | 0 | 
+| Bronze Key | C | 24 | B | 8.4 | 
+| Silver Key | C | 6.8 | B | 0 | 
+| Gold Key | C | 4.2 | A or B  | 0 | 
+| Golden Dice | B | 12.7 | A | 0 | 
+| Golden Ticket | A or B | 1.25 | C | 0.56 | 
+| Legendary Ticket | B | 6.44 | A or C | 0 | 
+
+
+## Premium Board Finale
+
+Again, for this table, the Event board is NOT considered!! You can review the tables above to check whether the event board is better for particular rewards (for Thanksgiving 2025 Free Board, it's very good for Bronze Keys and Silver Keys as well as Legendary Tickets).
+
+
+| Resource | Best Boards(s) | Avg per 100 rolls | Worst Board(s) | Avg per 100 rolls | 
+| ------- | ------- | ------- | ------- | ------- |
+| Coins | A | 1900 | C | 780 | 
+| Bux | C | 9000 |  A | 4800 | 
+| Ad Chest | N/A | 0 | A/B/C | 0 | 
+| Tier 1 Chest | B | 15.4 | A or C | 0 | 
+| Tier 2 Chest | A | 13.9 | B  | 0 | 
+| Tier 3 Chest | A or B | 3.2 | C | 0 | 
+| Tier 4 Chest | A | 0.95 | B | 0 | 
+| Bronze Key | B | 208 | A | 67 | 
+| Silver Key | C | 200 | A  | 18.6 | 
+| Gold Key | N/A | 0 | A/B/C | 0 |
+| Golden Dice | B | 9.5 | A or C | 0 | 
+| Golden Ticket | A | 5.7 | B | 0 | 
+| Legendary Ticket | C | 150 | B | 75 |

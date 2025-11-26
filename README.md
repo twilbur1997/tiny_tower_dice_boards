@@ -292,7 +292,7 @@ This is a work in progress, so any feedback is incredibly appreciated!!
     - Wants to unlock all of the Legendary Bits
     - This one's a bit tough... the Free Board C offers some immediate payoff with higher rates of Ad Chests, Tier 1 Chests, and Tier 3 Chests. Plus, higher rates of Bronze, Silver, and Gold Keys. 
     - But, the Free Board C has less than half the rate of Golden Dice as A or B, making it difficult to earn rolls on the Premium Boards.
-    - That said, the Premium Board C has a nice amount of Silver Keys and Legendary Tickets, so once you've earned those Golden 
+    - That said, the Premium Board C has a nice amount of Silver Keys and Legendary Tickets, so once you've earned those Golden Dice, spending them on the Premium Board C would be a good move.
     - Final Verdict:
         * Free A or B for Golden Dice
         * Premium C for Silver Keys and Legendary Tickets

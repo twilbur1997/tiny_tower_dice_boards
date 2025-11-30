@@ -1,0 +1,86 @@
+{
+    "BoardAFree": {
+        "Coins": 425.08,
+        "Bux": 9553.25,
+        "Ad Chest": 6.67,
+        "Tier 1 Chest": 8.04,
+        "Bronze Key": 16.02,
+        "Silver Key": 1.93,
+        "Golden Ticket": 1.3
+    },
+    "BoardBFree": {
+        "Coins": 424.89,
+        "Bux": 7318.76,
+        "Ad Chest": 6.69,
+        "Tier 1 Chest": 14.48,
+        "Bronze Key": 8.36,
+        "Golden Dice": 12.7,
+        "Golden Ticket": 1.29,
+        "Legendary Ticket": 6.41
+    },
+    "BoardCFree": {
+        "Coins": 388.8,
+        "Bux": 12720.48,
+        "Ad Chest": 8.41,
+        "Tier 1 Chest": 15.29,
+        "Tier 3 Chest": 1.41,
+        "Bronze Key": 24.29,
+        "Silver Key": 6.84,
+        "Gold Key": 4.25,
+        "Golden Dice": 6.38,
+        "Golden Ticket": 0.57
+    },
+    "BoardAPremium": {
+        "Coins": 1895.73,
+        "Bux": 4819.77,
+        "Tier 2 Chest": 13.88,
+        "Tier 3 Chest": 3.22,
+        "Tier 4 Chest": 0.95,
+        "Bronze Key": 66.85,
+        "Silver Key": 18.68,
+        "Golden Ticket": 5.76,
+        "Legendary Ticket": 121.83
+    },
+    "BoardBPremium": {
+        "Coins": 1299.27,
+        "Bux": 5288.31,
+        "Tier 1 Chest": 15.36,
+        "Tier 3 Chest": 3.19,
+        "Bronze Key": 208.04,
+        "Silver Key": 129.5,
+        "Golden Dice": 9.64,
+        "Legendary Ticket": 75.96
+    },
+    "BoardCPremium": {
+        "Coins": 785.87,
+        "Bux": 8964.05,
+        "Tier 2 Chest": 6.9,
+        "Tier 4 Chest": 0.67,
+        "Bronze Key": 112.77,
+        "Silver Key": 200.01,
+        "Golden Ticket": 3.31,
+        "Legendary Ticket": 150.37
+    },
+    "BoardThanksgiving2025Free": {
+        "Coins": 390.37,
+        "Bux": 5976.44,
+        "Ad Chest": 8.84,
+        "Tier 1 Chest": 14.7,
+        "Tier 2 Chest": 1.51,
+        "Bronze Key": 86.01,
+        "Silver Key": 11.46,
+        "Golden Dice": 9.9,
+        "Legendary Ticket": 8.2
+    },
+    "BoardThanksgiving2025Premium": {
+        "Coins": 1143.82,
+        "Bux": 4118.82,
+        "Tier 2 Chest": 13.2,
+        "Tier 4 Chest": 1.06,
+        "Bronze Key": 360.38,
+        "Silver Key": 182.96,
+        "Gold Key": 6.85,
+        "Golden Ticket": 2.66,
+        "Legendary Ticket": 153.98
+    }
+}

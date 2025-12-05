@@ -16,8 +16,8 @@ ROUND_PRECISION = 2 # Round to this many decimal places for the means
 STATUS_CHECK_FREQUENCY = 20 # Check progress by 5% each time, making 20 checks in 100% of progress
 PRINT_PERCENT = False
 BOARD_NAMES = [
-    "BoardAFree", "BoardBFree", "BoardCFree","BoardThanksgiving2025Free",
-    "BoardAPremium", "BoardBPremium", "BoardCPremium", "BoardThanksgiving2025Premium"
+    "BoardAFree", "BoardBFree", "BoardCFree",
+    "BoardAPremium", "BoardBPremium", "BoardCPremium"
     ]
 DICE_BOARDS_FILE = "dice_boards.json"
 DICE_RESULTS_FILE = "results_all_boards.json"

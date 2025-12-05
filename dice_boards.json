@@ -150,54 +150,5 @@
         "Reward2": ["25% chance", "3 Golden Tickets"],
         "Reward3": ["15% chance", "1 Tier 4 Chest"],
         "Reward4": ["5% chance", "100 Legendary Tickets"]
-    },
-    "BoardThanksgiving2025Free":[
-        "300 Bux",
-        "13 % Coins",
-        "REVERSE",
-        "1 Tier 1 Chest",
-        "20 % Coins",
-        "1 Ad Chest",
-        "5 Bronze Keys",
-        "REVERSE",
-        "2 Silver Keys",
-        "1 Tier 1 Chest",
-        "FORWARD",
-        "1 Golden Dice",
-        "500 Bux",
-        "1 ???",
-        "10 % Coins",
-        "5 Bronze Keys"
-    ],
-    "BoardThanksgiving2025Free_Mystery":{
-        "Reward1": ["50% chance", "40 Pies (40 Bux)"],
-        "Reward2": ["30% chance", "1 Tier 2 Chest"],
-        "Reward3": ["15% chance", "5 Golden Dice"],
-        "Reward4": ["5% chance", "30 Legendary Tickets"]
-    },
-    "BoardThanksgiving2025Premium":[
-        "25 Bronze Keys",
-        "3 Legendary Tickets",
-        "67 % Coins",
-        "REVERSE",
-        "10 Silver Keys",
-        "1 Gold Key",
-        "1 Tier 2 Chest",
-        "FORWARD",
-        "25 Bronze Keys",
-        "10 Legendary Tickets",
-        "1 Tier 2 Chest",
-        "1 ???",
-        "5 Legendary Tickets",
-        "67 % Coins",
-        "15 Silver Keys",
-        "500 Bux"
-    ],
-    "BoardThanksgiving2025Premium_Mystery":{
-        "Reward1": ["40% chance", "100 Pies (100 Bux)"],
-        "Reward2": ["30% chance", "25 Legendary Tickets"],
-        "Reward3": ["20% chance", "1 Tier 4 Chest"],
-        "Reward4": ["10% chance", "5 Golden Tickets"]
     }
-
 }

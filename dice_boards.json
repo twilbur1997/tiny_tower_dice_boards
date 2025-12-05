@@ -25,7 +25,7 @@
         "300 Bux",
         "10 % Coins"
     ],
-    "BoardAFree_Mystery":{
+    "BoardAFree_Special":{
         "Reward1": ["40% chance", "1 Tier 1 Chest"],
         "Reward2": ["30% chance", "4 Bronze Keys"],
         "Reward3": ["20% chance", "1 Golden Ticket"],
@@ -49,7 +49,7 @@
         "90 % Coins",
         "10 Legendary Tickets"
     ],
-    "BoardAPremium_Mystery": {
+    "BoardAPremium_Special": {
         "Reward1": ["50% chance", "1 Tier 3 Chest"],
         "Reward2": ["30% chance", "3 Golden Tickets"],
         "Reward3": ["15% chance", "1 Tier 4 Chest"],
@@ -73,7 +73,7 @@
         "500 Bux",
         "10 % Coins"
     ],
-    "BoardBFree_Mystery":{
+    "BoardBFree_Special":{
         "Reward1": ["40% chance", "1 Tier 1 Chest"],
         "Reward2": ["30% chance", "3 Golden Dice"],
         "Reward3": ["20% chance", "1 Golden Ticket"],
@@ -97,7 +97,7 @@
         "33 % Coins",
         "15 Bronze Keys"
     ],
-    "BoardBPremium_Mystery": {
+    "BoardBPremium_Special": {
         "Reward1": ["50% chance", "1 Tier 3 Chest"],
         "Reward2": ["30% chance", "5 Golden Dice"],
         "Reward3": ["15% chance", "100 Bronze Keys"],
@@ -121,7 +121,7 @@
         "300 Bux",
         "20 % Coins"
     ],
-    "BoardCFree_Mystery":{
+    "BoardCFree_Special":{
         "Reward1": ["50% chance", "1500 Bux"],
         "Reward2": ["25% chance", "1 Tier 3 Chest"],
         "Reward3": ["15% chance", "5 Gold Keys"],
@@ -145,7 +145,7 @@
             "5 Silver Keys",
             "1 Tier 2 Chest"
         ],
-    "BoardCPremium_Mystery":{
+    "BoardCPremium_Special":{
         "Reward1": ["55% chance", "30 Silver Keys"],
         "Reward2": ["25% chance", "3 Golden Tickets"],
         "Reward3": ["15% chance", "1 Tier 4 Chest"],

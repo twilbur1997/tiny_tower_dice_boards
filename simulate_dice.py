@@ -52,13 +52,13 @@ def json_read(board_name, file_name=DICE_BOARDS_FILE):
         print("Error: Failed to decode JSON from the file. Check for malformed JSON.")
 
     tile_list = data[board_name]
-    mystery_name = board_name + "_Mystery"
-    mystery_list = data[mystery_name]
+    special_name = board_name + "_Special"
+    special_list = data[special_name]
 
-    return tile_list, mystery_list
+    return tile_list, special_list
 
 
-def simulate_dice(board_name, calc_mystery = True):
+def simulate_dice(board_name, calc_special = True):
     resource_list = {
         "Coins": 0,
         "Bux": 0,
@@ -85,7 +85,7 @@ def simulate_dice(board_name, calc_mystery = True):
     # rand_list=[6 for _ in range(NUM_ROLLS)]
     # print(rand_list[:10])
 
-    tile_list, mystery_list = json_read(board_name=board_name)
+    tile_list, special_list = json_read(board_name=board_name)
     total_steps = -1 # If rolling a 1 to start, the array index should be zero
     for roll in rand_list:
         debug_str = ""
@@ -124,20 +124,20 @@ def simulate_dice(board_name, calc_mystery = True):
             print_str = "\t"+tile
             print(print_str)
     
-    if calc_mystery: # Now, we'll replace the "???" resource with the appropriate resources. 
+    if calc_special: # Now, we'll replace the "???" resource with the appropriate resources. 
         # Set this conditional to "false" to see how many ??? tiles are expected
-        total_mystery_landings = resource_list["???"]
+        total_special_landings = resource_list["???"]
         resource_list["???"] = 0 # Set this to zero to show they've been counted
 
-        proportional_mystery = False
-        if proportional_mystery: # Add proportional amount of each resource instead of simulating chance
+        proportional_special = False
+        if proportional_special: # Add proportional amount of each resource instead of simulating chance
             # print("\n\nTODO - sorry!\n\n")
-            proportional_mystery = True
+            proportional_special = True
 
         else:
-            mystery_weights = []
-            mystery_prizes = []
-            for key, value in mystery_list.items():
+            special_weights = []
+            special_prizes = []
+            for key, value in special_list.items():
                 # NOTE - EXAMPLE:  "Reward1": ["40% chance", "1 Tier 1 Chest"]
                 chance_string = value[0]
                 reward_string = value[1]
@@ -145,10 +145,10 @@ def simulate_dice(board_name, calc_mystery = True):
                 chance_num = chance_string.split(" ")[0] # Get first part of "40% chance" to "40%"
                 chance_num = int(chance_num.replace("%", "")) # Get to integer by removing "%" and int casting
 
-                mystery_weights.append(chance_num)
-                mystery_prizes.append(reward_string)
+                special_weights.append(chance_num)
+                special_prizes.append(reward_string)
 
-            prizes_won = random.choices(mystery_prizes, weights=mystery_weights, k=total_mystery_landings)
+            prizes_won = random.choices(special_prizes, weights=special_weights, k=total_special_landings)
 
             for prize in prizes_won:
                 # With this list of prizes, add them to the resource list
@@ -297,15 +297,15 @@ def generate_table_of_tiles(board_names):
                     print_str = print_str +str(tile)+ " | "
                 print_str = print_str + "\n"
 
-            # Third, iterate a row counter while running through the mystery lists
+            # Third, iterate a row counter while running through the special lists
             for j in range(4):
-                print_str = print_str + "| Mystery " + str(j+1) + " | "
+                print_str = print_str + "| Special " + str(j+1) + " | "
                 for key in board_names:
-                    mystery_name = key + "_Mystery"
-                    mystery_list = boards_json[mystery_name]
-                    mystery_index = "Reward"+str(j+1)
-                    tile = mystery_list[mystery_index][0].replace("chance","")
-                    tile = tile + ": " + mystery_list[mystery_index][1]
+                    special_name = key + "_Special"
+                    special_list = boards_json[special_name]
+                    special_index = "Reward"+str(j+1)
+                    tile = special_list[special_index][0].replace("chance","")
+                    tile = tile + ": " + special_list[special_index][1]
 
                     print_str = print_str + "<sub>" + str(tile)+ "</sub> | "
                 print_str = print_str + "\n"

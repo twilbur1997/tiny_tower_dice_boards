@@ -4,6 +4,8 @@
 
 [Disclaimer](#disclaimer)
 
+[Fun Disclaimer](#fun-disclaimer)
+
 [Board Images](#board-images)
 - [Free Board Images](#free-board-images)
 - [Premium Board Images](#premium-board-images)
@@ -57,7 +59,16 @@ Happy building,
 
 ## Disclaimer
 
-This analysis was performed to help users understand the expected values of specific dice boards. However you wish to play the game to have fun is up to you. You don't have to optimize the fun out of it!
+All screenshots belong to Nimblebit, the creator of Tiny Tower. Derivative works (this README, the tables within, etc.) are public domain and no rights are reserved.
+
+--- 
+
+
+## Fun Disclaimer
+
+This analysis was performed to help users understand the expected values of specific dice boards.
+
+However you wish to play the game to have fun is up to you. You don't have to optimize the fun out of it!
 
 
 ---
@@ -111,7 +122,7 @@ Please note the following:
     - Bronze Key = Regular Token
 2. Coins are listed as a percentage of how much it costs to build a floor
     - If a new floor in your tower costs 10,000 coins, a "10% Coins" will give 1,000 coins
-3. The "???" tile is also referred to as "Mystery" in some places since the code wouldn't let me use "???" in some variable names. 
+3. The "???" tile is also referred to as "Special" in some places since the code wouldn't let me use "???" in some variable names. 
 4. There may be errors in the following table!! Let me know in the Tiny Tower Discord @ToadTruck
 
 <br>
@@ -139,10 +150,10 @@ Please note the following:
 | Tile 14 | 12 % Coins | 12 % Coins | 1 Ad Chest | 
 | Tile 15 | 300 Bux | 500 Bux | 300 Bux | 
 | Tile 16 | 10 % Coins | 10 % Coins | 20 % Coins | 
-| Mystery 1 | <sub>40% : 1 Tier 1 Chest</sub> | <sub>40% : 1 Tier 1 Chest</sub> | <sub>50% : 1500 Bux</sub> | 
-| Mystery 2 | <sub>30% : 4 Bronze Keys</sub> | <sub>30% : 3 Golden Dice</sub> | <sub>25% : 1 Tier 3 Chest</sub> | 
-| Mystery 3 | <sub>20% : 1 Golden Ticket</sub> | <sub>20% : 1 Golden Ticket</sub> | <sub>15% : 5 Gold Keys</sub> |
-| Mystery 4 | <sub>10% : 3 Silver Keys</sub> | <sub>10% : 10 Legendary Tickets</sub> | <sub>10% : 1 Golden Ticket</sub> |
+| Special 1 | <sub>40% : 1 Tier 1 Chest</sub> | <sub>40% : 1 Tier 1 Chest</sub> | <sub>50% : 1500 Bux</sub> | 
+| Special 2 | <sub>30% : 4 Bronze Keys</sub> | <sub>30% : 3 Golden Dice</sub> | <sub>25% : 1 Tier 3 Chest</sub> | 
+| Special 3 | <sub>20% : 1 Golden Ticket</sub> | <sub>20% : 1 Golden Ticket</sub> | <sub>15% : 5 Gold Keys</sub> |
+| Special 4 | <sub>10% : 3 Silver Keys</sub> | <sub>10% : 10 Legendary Tickets</sub> | <sub>10% : 1 Golden Ticket</sub> |
 
 
 <br>
@@ -171,10 +182,10 @@ Please note the following:
 | Tile 14 | 3 Silver Keys | 1 Silver Key | REVERSE | 
 | Tile 15 | 90 % Coins | 33 % Coins | 5 Silver Keys | 
 | Tile 16 | 10 Legendary Tickets | 15 Bronze Keys | 1 Tier 2 Chest | 
-| Mystery 1 | <sub>50% : 1 Tier 3 Chest</sub> | <sub>50% : Tier 3 Chest</sub> | <sub>55% : 30 Silver Keys</sub> | 
-| Mystery 2 | <sub>30% : 3 Golden Tickets</sub> | <sub>30% : 5 Golden Dice</sub> | <sub>25% : 3 Golden Tickets</sub> |
-| Mystery 3 | <sub>15% : 1 Tier 4 Chest</sub> | <sub>15% : 100 Bronze Keys</sub> | <sub>15% : 1 Tier 4 Chest</sub> |
-| Mystery 4 | <sub>5% : 100 Legendary Tickets</sub> | <sub>5% : 110 Silver Keys</sub> | <sub>5% : 100 Legendary Tickets</sub> | 
+| Special 1 | <sub>50% : 1 Tier 3 Chest</sub> | <sub>50% : Tier 3 Chest</sub> | <sub>55% : 30 Silver Keys</sub> | 
+| Special 2 | <sub>30% : 3 Golden Tickets</sub> | <sub>30% : 5 Golden Dice</sub> | <sub>25% : 3 Golden Tickets</sub> |
+| Special 3 | <sub>15% : 1 Tier 4 Chest</sub> | <sub>15% : 100 Bronze Keys</sub> | <sub>15% : 1 Tier 4 Chest</sub> |
+| Special 4 | <sub>5% : 100 Legendary Tickets</sub> | <sub>5% : 110 Silver Keys</sub> | <sub>5% : 100 Legendary Tickets</sub> | 
 
 <br>
 <br>

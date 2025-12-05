@@ -79,11 +79,18 @@ However you wish to play the game to have fun is up to you. You don't have to op
 
 # Board Images
 
-The following boards are organized (A, B, C, Event (if applicable))
+The following boards are organized (A, B, C)
+
+Note that ALL BOARDS start with the player at the very top of the board. The top resource is not visible until one dice has been rolled.
 
 ****Note that Coins are not standardized between screenshots.***
 
 To standardize Coins, the tables below list Coin rewards as a percentage of the cost of a new floor.
+
+Finally, if you have upgradeable commercial floors, you may see an "upgrade" tile near the ??? tile. This is not included in this analysis due to the relatively low value of floor upgrades once a player has enough Golden Ticket (about 30) to upgrade all commercial floors during a rebuild.
+
+If none of that makes sense to you - that's okay! Join the [Discord](https://discord.com/invite/BmaZ2aY) for live advice, or check out the [Wiki](https://tinytower.fandom.com/wiki/Tiny_Tower_Wiki).
+
 
 <br>
 

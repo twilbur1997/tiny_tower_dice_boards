@@ -178,6 +178,7 @@ def run_through_prizes(special_prizes, special_weights, total_special_landings):
         quantity_prize = special_weights[i]*total_special_landings
         reward_string = special_prizes[i].split(" ",1)[1] # "100 Legendary Tickets" --> ["100", "Legendary Tickets"]
         reward_string = str(quantity_prize)+" "+reward_string
+        prizes_won.append(reward_string)
 
     return prizes_won
 
@@ -329,7 +330,7 @@ def add_resource_to_list(resource_list, tile, multiplier=1):
         if tile_type in tile: # add to the resource counter
             regular_resource = True
             quantity_resource = tile.split(" ")[0]
-            resource_list[tile_type] += int(quantity_resource)*multiplier
+            resource_list[tile_type] += int(float(quantity_resource))*multiplier
             
             # debug_str = debug_str+str(roll)+" "+str(total_steps)+" "+str(tile_type)+" "+str(quantity_resource)
             # debug_str = debug_str+str(tile_type)+" "+str(quantity_resource)

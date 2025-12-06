@@ -9,8 +9,8 @@ import json
 #       That could also be done by just rolling a ton of ones (as long as the REVERSE doesn't exist)!
 
 # TODO [ ] Expected Value approach is having trouble with the following:
-#       [ ] "REVERSE" tile is being added at some point
-#       [ ] Special Tile isn't adding resources well
+#       [ ] "REVERSE" tile is being added at some point due to Board C Free having two "overlapping" reverse tiles
+#       [X] Special Tile isn't adding resources well
 
 # Global variables
 # Note: Multiplying TRIALS and ROLLS to 1,000,000 (10^6) is quick, 10,000,000 (10^7) takes up to 10 seconds
@@ -159,13 +159,6 @@ def calc_special_rewards(resource_list, special_list, simulated = True):
     else:
         prizes_won = run_through_prizes(special_prizes, special_weights, total_special_landings)
 
-    print_str_special = "SPECIAL PRIZE CALCULATIONS"
-    print(print_str_special)
-    print(resource_list)
-    print(special_list)
-    print(prizes_won)
-    print(print_str_special)
-
     for prize in prizes_won:
         # With this list of prizes, add them to the resource list
         resource_list = add_resource_to_list(resource_list, prize)
@@ -174,6 +167,8 @@ def calc_special_rewards(resource_list, special_list, simulated = True):
 
 def run_through_prizes(special_prizes, special_weights, total_special_landings):
     prizes_won = []
+    sum_weights = sum(special_weights)
+    special_weights = [(item / sum_weights) for item in special_weights]
     for i in range(len(special_prizes)):
         quantity_prize = special_weights[i]*total_special_landings
         reward_string = special_prizes[i].split(" ",1)[1] # "100 Legendary Tickets" --> ["100", "Legendary Tickets"]
@@ -312,14 +307,14 @@ def run_expected(board_name):
     # Calc all the Special Tiles
     resource_list = calc_special_rewards(resource_list, special_list, simulated=False)
 
-    # resource_list = round_all(resource_list)
+    resource_list = round_all(resource_list)
     write_board_results(board_name, resource_list)
 
     return
 
 def round_all(resource_list):
     for key in resource_list.keys():
-        resource_list[key] = round(resource_list[key], 3)
+        resource_list[key] = round(resource_list[key])
     return resource_list
 
 
@@ -438,14 +433,14 @@ def build_print_string_for_table(board_names):
         
     # Run through the full resource dictionary and add resources per board
     for resource_name in ALL_RESOURCE_LIST:
-        print("\n\n")
+        # print("\n\n")
 
         print_str = print_str + "| "+resource_name+" | "
         resource_line = ""
         for board_name in board_names:
             if resource_name in means_dict[board_name]:
                 resource_mean_for_board = means_dict[board_name][resource_name]
-                print(f"Resource Mean for {resource_name} board {board_name} is {resource_mean_for_board}")
+                # print(f"Resource Mean for {resource_name} board {board_name} is {resource_mean_for_board}")
             else:
                 resource_mean_for_board = 0
             resource_line = resource_line+str(resource_mean_for_board)+" | "

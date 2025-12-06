@@ -8,11 +8,15 @@ import json
 # TODO include a naive approach that just divides all resources by 1/16 on the board and adds them together
 #       That could also be done by just rolling a ton of ones (as long as the REVERSE doesn't exist)!
 
+# TODO [ ] Expected Value approach is having trouble with the following:
+#       [ ] "REVERSE" tile is being added at some point
+#       [ ] Special Tile isn't adding resources well
+
 # Global variables
 # Note: Multiplying TRIALS and ROLLS to 1,000,000 (10^6) is quick, 10,000,000 (10^7) takes up to 10 seconds
 NUM_TRIALS = 10**3
 NUM_ROLLS = 10**3
-STANDARD_ROLLS = 100
+STANDARD_ROLLS = 96
 
 # Advanced Variables
 ROUND_PRECISION = 2 # Round to this amount of decimal places for the means
@@ -61,7 +65,7 @@ def json_read(board_name, file_name=DICE_BOARDS_FILE):
     return tile_list, special_list
 
 
-def simulate_dice(board_name, calc_special = True):
+def simulate_dice(board_name, calc_special_boolean = True):
     resource_list = {
         "Coins": 0,
         "Bux": 0,
@@ -112,11 +116,8 @@ def simulate_dice(board_name, calc_special = True):
         # Ok, we've now landed on a regular resource after checking for Forward or Reverse Tiles      
         resource_list = add_resource_to_list(resource_list, tile)
         
-        
-    if calc_special: # Now, we'll replace the "???" resource with the appropriate resources. 
+    if calc_special_boolean: # Now, we'll replace the "???" resource with the appropriate resources. 
         # Set this conditional to "false" to see how many ??? tiles are expected
-        total_special_landings = resource_list["???"]
-        resource_list["???"] = 0 # Set this to zero to show they've been counted
 
         proportional_special = False
         if proportional_special: # Add proportional amount of each resource instead of simulating chance
@@ -124,47 +125,61 @@ def simulate_dice(board_name, calc_special = True):
             proportional_special = True
 
         else:
-            special_weights = []
-            special_prizes = []
-            for key, value in special_list.items():
-                # NOTE - EXAMPLE:  "Reward1": ["40% chance", "1 Tier 1 Chest"]
-                chance_string = value[0]
-                reward_string = value[1]
-                
-                chance_num = chance_string.split(" ")[0] # Get first part of "40% chance" to "40%"
-                chance_num = int(chance_num.replace("%", "")) # Get to integer by removing "%" and int casting
-
-                special_weights.append(chance_num)
-                special_prizes.append(reward_string)
-
-            # Randomly select prizes
-            prizes_won = random.choices(special_prizes, weights=special_weights, k=total_special_landings)
-
-            for prize in prizes_won:
-                # With this list of prizes, add them to the resource list
-                regular_resource = False # Remember to check the resources
-                for tile_type in resource_list.keys():
-                    if tile_type in prize: # add to the resource counter
-                        regular_resource = True
-                        quantity_resource = prize.split(" ")[0]
-                        resource_list[tile_type] += int(quantity_resource)
-                        
-                        debug_str = debug_str+str(roll)+" "+str(total_steps)+" "+str(tile_type)+" "+str(quantity_resource)
-                        # print(debug_str)
-                        # time.sleep(0.5)
-                        break
-                
-                if regular_resource == False: # This trips if the prize type is not listed in our overall resource catalog
-                    print("RESOURCE NOT RECOGNIZED - CHECK JSON INPUT") # (usually due to a typo in the JSON)
-                    print_str = "\t"+prize
-                    print(print_str)
+            resource_list = calc_special_rewards(resource_list, special_list)
             
 
-    for key in resource_list.keys(): # Normalize to 100 rolls
+    for key in resource_list.keys(): # Normalize to 100 rolls (or whatever STANDARD_ROLLS is set to)
         resource_list[key] = resource_list[key]/(NUM_ROLLS/STANDARD_ROLLS)
     # pprint.pprint(resource_list)
     
     return resource_list
+
+
+def calc_special_rewards(resource_list, special_list, simulated = True):
+    total_special_landings = resource_list["???"]
+    resource_list["???"] = 0 # Set this to zero to show they've been counted
+
+    special_weights = []
+    special_prizes = []
+    for key, value in special_list.items():
+        # NOTE - EXAMPLE:  "Reward1": ["40% chance", "1 Tier 1 Chest"]
+        _ = key                     # "Reward1"
+        chance_string = value[0]    # "40% chance"
+        reward_string = value[1]    # "1 Tier 1 Chest"
+        
+        chance_num = chance_string.split(" ")[0] # Get first part of "40% chance" to "40%"
+        chance_num = int(chance_num.replace("%", "")) # Get to integer by removing "%" and int casting
+
+        special_weights.append(chance_num)
+        special_prizes.append(reward_string)
+
+    # Randomly select prizes
+    if simulated:
+        prizes_won = random.choices(special_prizes, weights=special_weights, k=total_special_landings)
+    else:
+        prizes_won = run_through_prizes(special_prizes, special_weights, total_special_landings)
+
+    print_str_special = "SPECIAL PRIZE CALCULATIONS"
+    print(print_str_special)
+    print(resource_list)
+    print(special_list)
+    print(prizes_won)
+    print(print_str_special)
+
+    for prize in prizes_won:
+        # With this list of prizes, add them to the resource list
+        resource_list = add_resource_to_list(resource_list, prize)
+    return resource_list
+
+
+def run_through_prizes(special_prizes, special_weights, total_special_landings):
+    prizes_won = []
+    for i in range(len(special_prizes)):
+        quantity_prize = special_weights[i]*total_special_landings
+        reward_string = special_prizes[i].split(" ",1)[1] # "100 Legendary Tickets" --> ["100", "Legendary Tickets"]
+        reward_string = str(quantity_prize)+" "+reward_string
+
+    return prizes_won
 
 
 def process_ind_trials_dict(independent_trials):
@@ -293,14 +308,17 @@ def run_expected(board_name):
             multiplier = STANDARD_ROLLS/num_tiles
             add_resource_to_list(resource_list, tile, multiplier)
 
-    resource_list = round_all(resource_list)
+    # Calc all the Special Tiles
+    resource_list = calc_special_rewards(resource_list, special_list, simulated=False)
+
+    # resource_list = round_all(resource_list)
     write_board_results(board_name, resource_list)
 
     return
 
 def round_all(resource_list):
     for key in resource_list.keys():
-        resource_list[key] = round(resource_list[key], 4)
+        resource_list[key] = round(resource_list[key], 3)
     return resource_list
 
 

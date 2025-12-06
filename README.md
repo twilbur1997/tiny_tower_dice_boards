@@ -14,8 +14,12 @@
 - [Free Board Tables](#free-board-tables)
 - [Premium Board Tables](#premium-board-tables)
 
-[Results](#results) 
-- [Full Tables](#full-tables)
+[Expected Results](#expected-results)
+- [Expected Tables](#expected-tables)
+
+
+[Simulation Results](#simulation-results) 
+- [Simulation Tables](#full-tables)
 - [Discussion](#discussion)
     * [Free Board Discussion](#free-board-discussion)
     * [Premium Board Discussion](#premium-board-discussion)
@@ -198,10 +202,59 @@ Please note the following:
 <br>
 
 
-# Results
+# Expected Results
 
 
-## Full Tables
+## Expected Tables
+
+### Expected Free Table
+
+
+| Resource | BoardAFree | BoardBFree | BoardCFree | 
+| ------- | ------- | ------- | ------- |
+| Coins | 420.8333 | 420.8333 | 347.9167 | 
+| Bux | 9687.5 | 7916.6667 | 8854.1667 | 
+| Ad Chest | 6.25 | 6.25 | 7.2917 | 
+| Tier 1 Chest | 6.25 | 12.5 | 16.6667 | 
+| Tier 2 Chest | 0 | 0 | 0 | 
+| Tier 3 Chest | 0 | 0 | 0 | 
+| Tier 4 Chest | 0 | 0 | 0 | 
+| Bronze Key | 8.3333 | 8.3333 | 21.875 | 
+| Silver Key | 0 | 0 | 8.3333 | 
+| Gold Key | 0 | 0 | 0 | 
+| Golden Dice | 0 | 6.25 | 6.25 | 
+| Golden Ticket | 0 | 0 | 0 | 
+| Legendary Ticket | 0 | 0 | 0 | 
+| ??? | 6.25 | 6.25 | 6.25 | 
+
+
+
+### Expected Premium Table
+
+
+| Resource | BoardAPremium | BoardBPremium | BoardCPremium | 
+| ------- | ------- | ------- | ------- |
+| Coins | 2062.5 | 1381.25 | 743.75 | 
+| Bux | 4062.5 | 4270.8333 | 9114.5833 | 
+| Ad Chest | 0 | 0 | 0 | 
+| Tier 1 Chest | 0 | 14.5833 | 0 | 
+| Tier 2 Chest | 14.5833 | 0 | 6.25 | 
+| Tier 3 Chest | 0 | 0 | 0 | 
+| Tier 4 Chest | 0 | 0 | 0 | 
+| Bronze Key | 62.5 | 125.0 | 109.375 | 
+| Silver Key | 21.875 | 107.2917 | 126.0417 | 
+| Gold Key | 0 | 0 | 0 | 
+| Golden Dice | 0 | 0 | 0 | 
+| Golden Ticket | 0 | 0 | 0 | 
+| Legendary Ticket | 97.9167 | 70.8333 | 131.25 | 
+| ??? | 6.25 | 6.25 | 7.2917 | 
+
+
+
+# Simulation Results
+
+
+## Simulation Tables
 
 These results reflect 1,000 trials of rolling a dice 1,000 times on each board. Then, the results are normalized to be an expected 100 rolls.
 

@@ -12,7 +12,10 @@ import json
 # Note: Multiplying TRIALS and ROLLS to 1,000,000 (10^6) is quick, 10,000,000 (10^7) takes up to 10 seconds
 NUM_TRIALS = 10**3
 NUM_ROLLS = 10**3
-ROUND_PRECISION = 2 # Round to this many decimal places for the means
+STANDARD_ROLLS = 100
+
+# Advanced Variables
+ROUND_PRECISION = 2 # Round to this amount of decimal places for the means
 STATUS_CHECK_FREQUENCY = 20 # Check progress by 5% each time, making 20 checks in 100% of progress
 PRINT_PERCENT = False
 BOARD_NAMES = [
@@ -107,23 +110,9 @@ def simulate_dice(board_name, calc_special = True):
             debug_str = debug_str + "FORWARD \n"
 
         # Ok, we've now landed on a regular resource after checking for Forward or Reverse Tiles      
-        regular_resource = False # That said, let's be sure with a quick check
-        for tile_type in resource_list.keys():
-            if tile_type in tile: # add to the resource counter
-                regular_resource = True
-                quantity_resource = tile.split(" ")[0]
-                resource_list[tile_type] += int(quantity_resource)
-                
-                debug_str = debug_str+str(roll)+" "+str(total_steps)+" "+str(tile_type)+" "+str(quantity_resource)
-                # print(debug_str)
-                # time.sleep(0.5)
-                break
+        resource_list = add_resource_to_list(resource_list, tile)
         
-        if regular_resource == False: # This trips if the tile type is not listed in our overall resource catalog
-            print("RESOURCE NOT RECOGNIZED") # (usually due to a typo in the JSON)
-            print_str = "\t"+tile
-            print(print_str)
-    
+        
     if calc_special: # Now, we'll replace the "???" resource with the appropriate resources. 
         # Set this conditional to "false" to see how many ??? tiles are expected
         total_special_landings = resource_list["???"]
@@ -148,6 +137,7 @@ def simulate_dice(board_name, calc_special = True):
                 special_weights.append(chance_num)
                 special_prizes.append(reward_string)
 
+            # Randomly select prizes
             prizes_won = random.choices(special_prizes, weights=special_weights, k=total_special_landings)
 
             for prize in prizes_won:
@@ -165,13 +155,13 @@ def simulate_dice(board_name, calc_special = True):
                         break
                 
                 if regular_resource == False: # This trips if the prize type is not listed in our overall resource catalog
-                    print("RESOURCE NOT RECOGNIZED") # (usually due to a typo in the JSON)
+                    print("RESOURCE NOT RECOGNIZED - CHECK JSON INPUT") # (usually due to a typo in the JSON)
                     print_str = "\t"+prize
                     print(print_str)
             
 
     for key in resource_list.keys(): # Normalize to 100 rolls
-        resource_list[key] = resource_list[key]/(NUM_ROLLS/100)
+        resource_list[key] = resource_list[key]/(NUM_ROLLS/STANDARD_ROLLS)
     # pprint.pprint(resource_list)
     
     return resource_list
@@ -209,6 +199,16 @@ def process_ind_trials_matrix(trials_matrix, board_name):
     return trials_matrix_means
 
 
+def status_update(i):
+    if i % (NUM_TRIALS/STATUS_CHECK_FREQUENCY) == 0: 
+        if (PRINT_PERCENT):
+            percent_str = str(round(i/NUM_TRIALS*100)) + "% complete..."
+            print(percent_str)
+        else:
+            print(".",end="", flush=True)
+    return
+
+
 def run_trials(board_name):
     # Runs a set number of trials on a given board, and appends the data to results_all_boards.json
     independent_trials = {}
@@ -217,13 +217,7 @@ def run_trials(board_name):
     print(f"\nNumber of trials: {NUM_TRIALS}.   Number of rolls per trial: {NUM_ROLLS}\n")
 
     for i in range(NUM_TRIALS):
-        if i % (NUM_TRIALS/STATUS_CHECK_FREQUENCY) == 0: 
-            if (PRINT_PERCENT):
-                percent_str = str(round(i/NUM_TRIALS*100)) + "% complete..."
-                print(percent_str)
-            else:
-                print(".",end="", flush=True)
-
+        status_update(i)
         new_trial = simulate_dice(board_name)
         for key, value in new_trial.items():
             if value == 0:
@@ -244,6 +238,93 @@ def run_trials(board_name):
 
     write_board_results(board_name, trials_means)
     return
+
+
+def run_expected(board_name):
+    # Runs an expected value program and appends the data to results_all_boards.json
+    independent_trials = {}
+    trials_matrix = {}
+    resource_list = {
+        "Coins": 0,
+        "Bux": 0,
+        "Ad Chest": 0,
+        "Tier 1 Chest": 0,
+        "Tier 2 Chest": 0,
+        "Tier 3 Chest": 0,
+        "Tier 4 Chest": 0,
+        "Bronze Key": 0,
+        "Silver Key": 0,
+        "Gold Key": 0,
+        "Golden Dice": 0,
+        "Golden Ticket": 0,
+        "Legendary Ticket": 0,
+        "???": 0
+    }
+
+    print(f"\nExpected Value Run Starting on: {board_name}.   Number of rolls to standardize on: {STANDARD_ROLLS}\n")
+
+    tile_list, special_list = json_read(board_name=board_name)
+    num_tiles = len(tile_list)
+    for i in range(num_tiles):
+        # Run through each tile, adding 1/len(tile_list) to the resource dict
+        # Consider multiplying by STANDARD_ROLLS as well to standardize them
+        tile = tile_list[i]
+        
+        # Check if FORWARD or REVERSE Tile
+        if tile == "REVERSE":
+            # Add 1/6 of each of the previous 6 tiles
+            multiplier = STANDARD_ROLLS/num_tiles
+            multiplier = multiplier/6
+            for j in range(1,7): # [1,2,3,4,5,6]
+                index = (i-j)%num_tiles
+                tile_reverse = tile_list[index]
+                add_resource_to_list(resource_list, tile_reverse, multiplier)
+        
+        elif tile == "FORWARD":
+            # Add 1/6 of each of the next 6 tiles
+            multiplier = STANDARD_ROLLS/num_tiles
+            multiplier = multiplier/6
+            for j in range(1,7): # [1,2,3,4,5,6]
+                index = (i+j)%num_tiles
+                tile_forward = tile_list[index]
+                add_resource_to_list(resource_list, tile_forward, multiplier)
+
+        else:
+            multiplier = STANDARD_ROLLS/num_tiles
+            add_resource_to_list(resource_list, tile, multiplier)
+
+    resource_list = round_all(resource_list)
+    write_board_results(board_name, resource_list)
+
+    return
+
+def round_all(resource_list):
+    for key in resource_list.keys():
+        resource_list[key] = round(resource_list[key], 4)
+    return resource_list
+
+
+def add_resource_to_list(resource_list, tile, multiplier=1):
+    # Ok, we've now landed on a regular resource after checking for Forward or Reverse Tiles      
+    regular_resource = False # That said, let's be sure with a quick check
+    for tile_type in resource_list.keys():
+        if tile_type in tile: # add to the resource counter
+            regular_resource = True
+            quantity_resource = tile.split(" ")[0]
+            resource_list[tile_type] += int(quantity_resource)*multiplier
+            
+            # debug_str = debug_str+str(roll)+" "+str(total_steps)+" "+str(tile_type)+" "+str(quantity_resource)
+            # debug_str = debug_str+str(tile_type)+" "+str(quantity_resource)
+            # print(debug_str)
+            # time.sleep(0.5)        
+            break
+
+    if regular_resource == False: # This trips if the tile type is not listed in our overall resource catalog
+        print("RESOURCE NOT RECOGNIZED - CHECK JSON INPUTS") # (usually due to a typo in the JSON)
+        print_str = "\t"+tile
+        print(print_str)
+
+    return resource_list
 
 
 def write_board_results(board_name, trials_means):
@@ -359,8 +440,8 @@ def generate_tables_of_results():
     # Takes the dictionaries of resources from results_all_boards.json and makes a markdown equivalent
     # NOTE: This makes two tables. One for Free Boards, and one for Premium Boards.
 
-    free_table = build_print_string_for_table(BOARD_NAMES[:4])
-    premium_table = build_print_string_for_table(BOARD_NAMES[4:])
+    free_table = build_print_string_for_table(BOARD_NAMES[:3])
+    premium_table = build_print_string_for_table(BOARD_NAMES[3:])
 
     free_table_str = "### Free Table\n\n\n" + free_table +"\n\n\n\n"
     premium_table_str = "### Premium Table\n\n\n" + premium_table + "\n\n"
@@ -397,11 +478,20 @@ def all_boards_trials():
     return
 
 
+def all_boards_expected():
+    for board in BOARD_NAMES:
+        run_expected(board)
+
+    generate_tables_of_results()
+    return
+
+
 def main():
     start_time = time.time()  
 
     # run_trials() # run on one board
-    all_boards_trials() # run on all boards
+    # all_boards_trials() # run simulation on all boards
+    all_boards_expected() # run expected on all boards
     # print_tables()
     
     end_time = time.time() 
